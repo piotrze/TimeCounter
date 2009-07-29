@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<glade-interface>
+  <!-- interface-requires gtk+ 2.16 -->
+  <!-- interface-naming-policy toplevel-contextual -->
+  <widget class="GtkWindow" id="main_window">
+    <property name="visible">True</property>
+    <property name="title" translatable="yes">Czas pracy</property>
+    <property name="default_width">36</property>
+    <property name="default_height">55</property>
+    <child>
+      <widget class="GtkVBox" id="main_container">
+        <property name="visible">True</property>
+        <child>
+          <widget class="GtkLabel" id="message_label">
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">zmieniam cos</property>
+          </widget>
+          <packing>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkButton" id="start_button">
+            <property name="label" translatable="yes">Zacznij prac&#x119;</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_hello_button_clicked"/>
+          </widget>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkButton" id="stop_button">
+            <property name="label" translatable="yes">Koniec</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+          </widget>
+          <packing>
+            <property name="position">2</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkEntry" id="comment_entry">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="tooltip" translatable="yes">Napisz co zrobi&#x142;e&#x15B;</property>
+            <property name="max_length">400</property>
+            <property name="invisible_char">&#x25CF;</property>
+          </widget>
+          <packing>
+            <property name="position">3</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</glade-interface>
